@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos do Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffa67c;
+        }
+
+        nav .logo {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            height: 95px;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: -moz-default-color;
+            font-size: 18px;
+        }
+
+        /* Estilos do container de texto e imagem */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .content .text {
+            width: 50%;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .content .image {
+            width: 50%;
+        }
+
+        .content .image img {
+            width: 100%;
+        }
+
+        /* Estilos do container de cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .card {
+            width: 30%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card img {
+            width: 20%;
+            object-fit: contain;
+        }
+
+        .card h3 {
+            padding: 15px;
+        }
+
+        .card p {
+            padding: 0 15px 15px 15px;
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #ffa67c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="logo">
+        <img class="img" src="vivara-removebg-preview.png" >
+    </div>
+
+    <ul>
+        <li><a href="https://www.vivara.com.br/vivara/joias?gad_source=1&gclid=CjwKCAiA8Lu9BhA8EiwAag16bz35JL6-V9YPyrsU2
+        uXn_HN3q7IZFk8krcKhW8H7ZNzIPZ9G75TUNRoC24gQAvD_BwE">Casa</a></li>
+
+        <li><a href="https://www.vivara.com.br/vivara/joias?gad_source=1&gclid=CjwKCAiA8Lu9BhA8EiwAag16bz35JL6-V9YPyrsU2
+        uXn_HN3q7IZFk8krcKhW8H7ZNzIPZ9G75TUNRoC24gQAvD_BwE">Compras</a></li>
+
+        <li><a href="https://www.vivara.com.br/vivara/joias?gad_source=1&gclid=CjwKCAiA8Lu9BhA8EiwAag16bz35JL6-V9YPyrsU2
+        uXn_HN3q7IZFk8krcKhW8H7ZNzIPZ9G75TUNRoC24gQAvD_BwE">Lançamentos</a></li>
+
+        <li><a href="https://www.vivara.com.br/vivara/joias?gad_source=1&gclid=CjwKCAiA8Lu9BhA8EiwAag16bz35JL6-V9YPyrsU2
+        uXn_HN3q7IZFk8krcKhW8H7ZNzIPZ9G75TUNRoC24gQAvD_BwE">MAIS VENDIDOS</a></li>
+
+        <li><a href="https://www.vivara.com.br/vivara/joias?gad_source=1&gclid=CjwKCAiA8Lu9BhA8EiwAag16bz35JL6-V9YPyrsU2
+        uXn_HN3q7IZFk8krcKhW8H7ZNzIPZ9G75TUNRoC24gQAvD_BwE">AJUDA</a></li>
+    </ul>
+</nav>
+
+<!-- Container com metade texto e metade imagem -->
+<div class="content">
+    <div class="text">
+        <h1>Bem-vindo a Vivara</h1><br><br>
+        <p> Joias exclusivas que transformam momentos em lembranças eternas.<br>
+            Explore nossa coleção e descubra peças feitas para brilhar com você.</p>
+    </div>
+    <div class="image">
+        <img src="img_2.png" alt="foto_colecao_vivaralife">
+    </div>
+</div>
+
+<!-- Container com 3 cards -->
+<div class="cards">
+    <div class="card">
+        <img src="img_3.png" alt="Brinco">
+        <h3>Brinco argola</h3>
+        <p>Argola Vivara em Ouro Amarelo 18k com Diamantes - R$ 7.050,00</p>
+    </div>
+    <div class="card">
+        <img src="img_4.png" alt="colar">
+        <h3>Colar pingente</h3>
+        <p>Pingente Lume Coração em Prata 925 e Ouro Amarelo 18k com Diamante de Laboratório 0,24 ct - R$ 1.750,00</p>
+    </div>
+    <div class="card">
+        <img src="img_5.png" alt="Anel">
+        <h3>Anel </h3>
+        <p>Anel Lavanda em Prata 925 com Pérola e Ametista Rosa - R$ 420,00</p>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
