@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* Gradiente de fundo */
+    background: linear-gradient(135deg, rgba(191, 191, 191, 0.51), rgba(191, 191, 191, 0.77));
+}
+
+#list {
+    display: flex;               /* ativa Flexbox */
+    flex-wrap: wrap;             /* permite várias linhas */
+    justify-content: center;     /* centraliza os cards horizontalmente */
+    gap: 20px;                   /* espaçamento entre os cards */
+    margin: 20px;                /* margem em torno do container */
+}
+
+#strong{
+    margin: 5px;
+}
+
+h1{
+    text-align: center;
+    margin: 40px;
+    font-family: Georgia;
+    color: black;
+
+}
+
+.error {
+    color: red;
+}
+
+/* Cards de produtos */
+.card {
+
+    border: 1px solid rgba(73, 72, 72, 0.51);
+    border-radius: 12px;
+    margin: 8px 8px;
+    /*transition: background-color 0.3s ease; !* Efeito suave *!*/
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 220px;               /* largura fixa do card */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    cursor: pointer;
+    background-color: rgba(73, 72, 72, 0.51); /* Cor ao passar o mouse */
+    cursor: pointer; /* Indica que é clicável */
+}
+
+/* Todas as imagens do mesmo tamanho */
+.card img {
+    width: 100%;                /* ocupa toda a largura do card */
+    height: 200px;              /* altura fixa */
+    object-fit: cover;          /* mantém proporção sem deformar */
+    border-radius: 12px;        /* mantém bordas arredondadas */
+    margin-bottom: 10px;
+}
+
+/* Botão dentro do card */
+.card .btn {
+    width: 100%;
+}
+
+.card p {
+    text-align: left;       /* alinha o texto à esquerda */
+    width: 100%;            /* faz o <p> ocupar toda a largura do card */
+    margin: 4px 0;          /* espaçamento entre os parágrafos */
+}
+
+/* Botão “Comprar” */
+.card .btn {
+    width: 100%;                  /* ocupa toda a largura do card */
+    margin-top: auto;             /* empurra para baixo */
+    border-radius: 4px;           /* borda pequena */
+    background-color: rgb(232, 3, 3);    /* cor verde chamativa */
+    border: 1px solid #e80303;   /* mesma cor da borda */
+    color: #fff;                  /* texto branco */
+    font-weight: bold;
+    padding: 8px 0;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #d61515;    /* cor um pouco mais claro ao passar o mouse */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: block;
+}
+
+pre {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+
+/* Mensagem de erro */
+#error {
+    color: red;
+    font-weight: bold;
+}
